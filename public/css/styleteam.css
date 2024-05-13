@@ -1,0 +1,264 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://w.wallhaven.cc/full/wq/wallhaven-wqvyxx.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#header {
+    background-color: rgb(28, 77, 125);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto; /* Aplica un margen automático horizontal para centrar */
+  padding: 0 2px; /* Ajusta el espacio interno */
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #03f803;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+@font-face{
+  font-family: Mootjungle;
+  src: url(Mootjungle.ttf);
+}
+#logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+  height: 80px; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-left: 10px; /* Ajusta el margen de la imagen según sea necesario */
+}
+
+#logo2 img{
+    height: 90px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 10px; /* Ajusta el margen de la imagen según sea necesario */
+}
+
+.contenedor {
+  margin-top: 15ch;
+  height: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  overflow-y: auto;
+  }
+
+  .imagen-presentacion {
+    width: 100%; /* Para que ocupe todo el ancho de su contenedor */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin: 0; /* Para eliminar los márgenes predeterminados */
+    padding: 0; /* Para eliminar el relleno predeterminado */
+    text-align: center; /* Para centrar la imagen horizontalmente */
+}
+
+.imagen-presentacion img {
+    width: 100%; /* Para que la imagen ocupe todo el ancho de su contenedor */
+    height: auto; /* Para mantener la proporción de la imagen */
+    display: block; /* Para eliminar cualquier espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Para centrar la imagen horizontalmente */
+}
+
+  .fila {
+    display: flex;
+    justify-content: space-between; /* Distribuye las tarjetas uniformemente */
+    margin-bottom: 12px; /* Espacio entre filas */
+  }
+
+.card {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+  .card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 50px;
+  }
+  
+  .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    color: red;
+  }
+  
+  .card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+  .Charly{
+
+  }
+  .Max{
+
+  }
+  .Lalo{
+
+  }
+  .Suri{
+
+  }
+  .Dani{
+
+  }
+  .Sam{
+
+  }
+  .German{
+
+  }
+  .Kim{
+
+  }
+
+  footer {
+    background-color:  rgb(79, 127, 158);;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-content ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+  }

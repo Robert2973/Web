@@ -1,0 +1,381 @@
+body {
+  margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://w.wallhaven.cc/full/wq/wallhaven-wqvyxx.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+#header {
+  background-color: rgb(28, 77, 125);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#header a {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: white;
+ 
+}
+
+
+#logo {
+position: relative;
+top: 0;
+left: 0;
+height: 100%;
+display: flex;
+align-items: center;
+}
+
+
+#logo img {
+height: 80px; /* Ajusta el tamaño de la imagen según sea necesario */
+margin-left: 10px; /* Ajusta el margen de la imagen según sea necesario */
+}
+
+
+#logo2 img{
+height: 90px; /* Ajusta el tamaño de la imagen según sea necesario */
+margin-right: 10px; /* Ajusta el margen de la imagen según sea necesario */
+}
+
+.info,
+.info2 {
+  position: relative;
+  display: flex; 
+  align-items: center;
+ }
+
+.card,
+.card2,
+.card3{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background: #ffffff67;
+  padding: 2rem 1.5rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+  position: relative;
+  margin: 0 auto ;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  
+ }
+
+ .card4,
+ .card5{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background: #ffffff67;
+  padding: 2rem 1.5rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+  position: relative;
+  margin: 0 auto ;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+ }
+
+ .card-info,
+ .card2-info,
+ .card3-info,
+ .card4-info,
+ .card5-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease, opacity .2s ease;
+ }
+ 
+ .card-avatar{
+  --size: 60px;
+  background-image: url('https://easyfairsassets.com/sites/61/2023/12/sPEAKER-TBC.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+
+ .card2-avatar{
+  --size: 60px;
+  background-image: url('https://easyfairsassets.com/sites/61/2023/12/sPEAKER-TBC.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+
+ .card3-avatar{
+  --size: 60px;
+  background-image: url('https://easyfairsassets.com/sites/61/2023/12/sPEAKER-TBC.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+
+ .card4-avatar{
+  --size: 60px;
+  background-image: url('https://easyfairsassets.com/sites/61/2023/12/sPEAKER-TBC.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+
+ .card5-avatar{
+  --size: 60px;
+  background-image: url('https://easyfairsassets.com/sites/61/2023/12/sPEAKER-TBC.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform .2s ease;
+  margin-bottom: 1rem;
+ }
+
+
+ .card-title,
+.card2-title,
+.card3-title,
+.card4-title,
+.card5-title{
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+ }
+ 
+ .card-subtitle,
+ .card2-subtitle,
+ .card3-subtitle,
+ .card4-subtitle,
+ .card5-subtitle{
+  color: #000000;
+  font-size: 0.8em;
+ }
+ 
+ .card:hover,
+ .card2:hover,
+ .card3:hover,
+ .card4:hover,
+ .card5:hover{
+  box-shadow: 0 8px 50px #23232333;
+ }
+ 
+ .card:hover .card-info,
+ .card2:hover .card2-info,
+ .card3:hover .card3-info,
+ .card4:hover .card4-info,
+ .card5:hover .card5-info{
+  transform: translateY(-5%);
+ }
+ 
+ .card-avatar:hover,
+ .card2-avatar:hover,
+ .card3-avatar:hover,
+ .card4-avatar:hover,
+ .card5-avatar:hover{
+  transform: scale(1.1);
+ }
+
+
+
+
+
+
+
+
+ .main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+  margin: 0 auto;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+  
+}
+
+.card10,
+.card12,
+.card14,
+.card16,
+.card18 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card11,
+.card13,
+.card15,
+.card17,
+.card19 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+
+.card10:hover,
+.card12:hover,
+.card14:hover,
+.card16:hover,
+.card18:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card10:hover .instagram,
+.card12:hover .instagram,
+.card14:hover .instagram,
+.card16:hover .instagram,
+.card18:hover .instagram {
+  fill: white;
+}
+
+.card11:hover,
+.card13:hover,
+.card15:hover,
+.card17:hover,
+.card19:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card11:hover .facebook,
+.card13:hover .facebook,
+.card15:hover .facebook,
+.card17:hover .facebook,
+.card19:hover .facebook{
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color:  rgb(79, 127, 158);;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
